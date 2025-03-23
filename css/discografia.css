@@ -1,0 +1,406 @@
+/* Estilos para las páginas de discografía */
+
+/* Página principal de discografía */
+.discografia-page {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.discografia-page h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.albums-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.album-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.album-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.album-cover {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.album-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.album-item:hover .album-cover img {
+    transform: scale(1.05);
+}
+
+.album-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.album-overlay span {
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.album-item:hover .album-overlay {
+    opacity: 1;
+}
+
+.album-info {
+    padding: 20px;
+}
+
+.album-info h3 {
+    margin: 0 0 5px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+}
+
+.album-info p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Página de detalle de álbum */
+.album-page {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: var(--color-blue-dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    color: var(--color-yellow);
+}
+
+.album-header {
+    margin-bottom: 40px;
+}
+
+.album-details {
+    display: flex;
+    gap: 30px;
+}
+
+.album-cover-large {
+    flex: 0 0 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.album-cover-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.album-info-large {
+    flex: 1;
+}
+
+.album-info-large h2 {
+    margin: 0 0 15px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    text-align: left;
+}
+
+.album-meta {
+    margin-bottom: 20px;
+}
+
+.album-meta p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.album-meta i {
+    margin-right: 10px;
+    color: var(--color-blue-dark);
+}
+
+.album-description p {
+    line-height: 1.6;
+}
+
+.album-tracklist h3 {
+    margin: 30px 0 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+}
+
+.songs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.song-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.song-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.song-number {
+    flex: 0 0 40px;
+    font-weight: bold;
+    color: #888;
+}
+
+.song-info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.song-title {
+    font-weight: 500;
+}
+
+.song-duration {
+    color: #888;
+}
+
+.song-play {
+    flex: 0 0 40px;
+    text-align: right;
+    color: var(--color-blue-dark);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.song-item:hover .song-play {
+    opacity: 1;
+}
+
+/* Página de detalle de canción */
+.cancion-page {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cancion-header {
+    margin-bottom: 30px;
+}
+
+.cancion-details {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.cancion-cover {
+    flex: 0 0 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cancion-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cancion-info {
+    flex: 1;
+}
+
+.cancion-info h2 {
+    margin: 0 0 15px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    text-align: left;
+}
+
+.cancion-meta p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.cancion-meta i {
+    margin-right: 10px;
+    color: var(--color-blue-dark);
+}
+
+/* Reproductor de música */
+.music-player {
+    background-color: var(--color-blue-dark);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.player-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.control-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.control-buttons button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-play-pause {
+    background-color: var(--color-yellow) !important;
+    font-size: 24px !important;
+}
+
+.control-buttons button:hover {
+    transform: scale(1.1);
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--color-yellow);
+    width: 0%;
+}
+
+.current-time, .total-time {
+    font-size: 14px;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.volume-slider {
+    flex: 0 0 100px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.volume-progress {
+    height: 100%;
+    background-color: var(--color-yellow);
+    width: 80%;
+}
+
+/* Letra de la canción */
+.cancion-letra {
+    margin-bottom: 40px;
+}
+
+.cancion-letra h3 {
+    margin: 0 0 20px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+}
+
+.letra-content {
+    line-height: 1.8;
+    white-space: pre-line;
+}
+
+
+.letra-centrada {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 80%;
+    line-height: 1.8;
+}
+/* Canciones relacionadas */
+.cancion-related h3 {
+    margin: 0 0 20px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+}
+
+.related-songs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.related-song-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}

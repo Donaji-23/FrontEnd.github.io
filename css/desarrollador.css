@@ -1,0 +1,265 @@
+/* Estilos específicos para la página de curriculum */
+
+/* Contenedor principal del CV */
+.cv-container {
+    background-color: var(--color-white);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    overflow: hidden;
+}
+
+.cv-container h2 {
+    padding: 20px 40px;
+    background-color: var(--color-blue-dark);
+    color: var(--color-white);
+    margin-bottom: 0;
+    width: 100%;
+    border-bottom: none;
+}
+
+/* Encabezado del CV */
+.cv-header {
+    background-color: var(--color-blue-dark);
+    color: var(--color-white);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--color-white);
+    background-color: var(--color-blue-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-blue-dark);
+    font-size: 60px;
+    margin-right: 30px;
+    flex-shrink: 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.header-content h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.contact-item i {
+    margin-right: 8px;
+    font-size: 0.9rem;
+}
+
+/* Contenido principal del CV */
+.cv-main {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 30px;
+    padding: 40px;
+}
+
+/* Barra lateral del CV */
+.cv-sidebar {
+    padding-right: 20px;
+}
+
+/* Contenido principal */
+.cv-main-content {
+    border-left: 1px solid var(--color-gray);
+    padding-left: 30px;
+}
+
+/* Secciones del CV */
+.cv-section {
+    margin-bottom: 30px;
+}
+
+.cv-section-title {
+    font-size: 1.3rem;
+    color: var(--color-blue-dark);
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--color-yellow);
+    display: flex;
+    align-items: center;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.cv-section-title i {
+    margin-right: 10px;
+}
+
+/* Elementos de habilidades */
+.skill-item {
+    margin-bottom: 15px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.skill-name {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: var(--color-white);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--color-yellow);
+}
+
+/* Elementos de experiencia y educación */
+.experience-item, .education-item {
+    margin-bottom: 20px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.item-title {
+    font-weight: 600;
+    color: var(--color-blue-dark);
+}
+
+.item-subtitle {
+    color: var(--color-gray);
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.item-date {
+    color: var(--color-yellow);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.item-description {
+    color: var(--color-blue-dark);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Proyectos */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.project-card {
+    background-color: var(--color-white);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-title {
+    font-weight: 600;
+    color: var(--color-blue-dark);
+    margin-bottom: 5px;
+}
+
+.project-desc {
+    font-size: 0.9rem;
+    color: var(--color-gray);
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.tag {
+    background-color: var(--color-blue-light);
+    color: var(--color-blue-dark);
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+}
+
+/* Estilos responsivos */
+@media (max-width: 992px) {
+    .cv-main {
+        grid-template-columns: 35% 65%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cv-main {
+        grid-template-columns: 1fr;
+    }
+    
+    .cv-main-content {
+        border-left: none;
+        padding-left: 0;
+    }
+    
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .contact-info {
+        justify-content: center;
+    }
+    
+    .cv-header, .cv-main {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="date" content="2025-03-05">
+    <title>Paulo Londra - Sitio Oficial</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;700&family=Shrikhand&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="logo">
+            <span class="logo-part1">Paulo</span> <span class="logo-part2">Londra</span>
+        </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="sidebar">
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" class="menu-button">Inicio</a></li>
+                    <li><a href="biografia.html" class="menu-button">Biografía</a></li>
+                    <li><a href="discografia.html" class="menu-button">Discografía</a></li>
+                    <li><a href="galeria.html" class="menu-button">Galería</a></li>
+                    <li><a href="videos.html" class="menu-button">Videos</a></li>
+                    <li><a href="desarrollador.html" class="menu-button">Desarrollador</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="content">
+            <!-- Sección de Inicio con carrusel -->
+            <div id="inicio" class="section home-content">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="img/1.jpg" alt="Paulo Londra en concierto">
+                    </div>
+                    <div class="slide">
+                        <img src="img/2.jpg" alt="Paulo Londra estudio">
+                    </div>
+                    <div class="slide">
+                        <img src="img/3.jpg" alt="Paulo Londra casual">
+                    </div>
+                    <div class="slide-controls">
+                        <span class="prev-slide"><i class="fas fa-chevron-left"></i></span>
+                        <span class="next-slide"><i class="fas fa-chevron-right"></i></span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Segunda sección: Biografía breve -->
+            <div id="bio-breve" class="section bio-section">
+                <div class="bio-content">
+                    <div class="bio-image">
+                        <img src="img/biografia.jpg" alt="Paulo Londra">
+                    </div>
+                    <div class="bio-text">
+                        <h2>Paulo Londra</h2>
+                        <p class="bio-description">Paulo Ezequiel Londra nació el 12 de abril de 1998 en Córdoba, Argentina. Se ha convertido en uno de los máximos exponentes del trap y reggaetón en Latinoamérica, colaborando con artistas de renombre internacional.</p>
+                        <p class="bio-quote">«La música es mi forma de expresar lo que siento, lo que vivo y lo que sueño»</p>
+                        <a href="biografia.html" class="btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tercera sección: Galería rápida -->
+            <div id="galeria-rapida" class="section gallery-section">
+                <h2>Galería</h2>
+                <div class="gallery-container">
+                    <div class="gallery-item">
+                        <img src="img/ga_1.jpg" alt="Paulo Londra en concierto">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/ga_2.jpg" alt="Paulo Londra estudio">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/ga_3.jpg" alt="Paulo Londra sesión fotográfica">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/ga_4.jpg" alt="Paulo Londra con fans">
+                    </div>
+                </div>
+                <div class="center-button">
+                    <a href="galeria.html" class="btn-secondary">Ver más</a>
+                </div>
+            </div>
+            
+            <!-- Cuarta sección: Último lanzamiento -->
+            <div id="ultimo-lanzamiento" class="section release-section">
+                <h2>Último Lanzamiento</h2>
+                <div class="release-content">
+                    <div class="release-cover">
+                        <img src="img/versus.jpg" alt="Último lanzamiento de Paulo Londra">
+                    </div>
+                    <div class="release-info">
+                        <h3>"Versus"</h3>
+                        <p class="release-date">Lanzado: 06 Marzo 2025</p>
+                        <div class="listen-buttons">
+                            <a href="https://open.spotify.com/intl-es/album/3S9l1Zky8ysxa8dEI1Hy1E?si=yjFA4CsNQTaIcz63_YXOwQ" class="btn-listen"><i class="fab fa-spotify"></i> Escuchar</a>
+                            <a href="https://www.youtube.com/watch?v=yUC02ow9SeM&list=OLAK5uy_l9MFP8JkEpa4MPElUxrvRNE5unBv0Z39s&ab_channel=PauloLondra" class="btn-listen"><i class="fab fa-youtube"></i> Ver video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quinta sección: Colaboraciones -->
+            <div id="colaboraciones" class="section collab-section">
+                <h2>Colaboraciones</h2>
+                <div class="collab-slider-container">
+                    <div class="collab-slider">
+                        <div class="collab-slide active">
+                            <div class="collab-artist">
+                                <img src="img/ed.jpg" alt="Ed Sheeran">
+                                <div class="collab-info">
+                                    <h3>Ed Sheeran</h3>
+                                    <p>"Nothing on You"</p>
+                                    <img src="img/noche.jpg" alt="Reino Unido" class="country-flag">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collab-slide">
+                            <div class="collab-artist">
+                                <img src="img/beckyg.jpg" alt="Becky G">
+                                <div class="collab-info">
+                                    <h3>Becky G</h3>
+                                    <p>"Cuando Te Besé"</p>
+                                    <img src="img/col_beckyg.jpg" alt="Estados Unidos" class="country-flag">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collab-slide">
+                            <div class="collab-artist">
+                                <img src="img/lenny.jpg" alt="Lenny Tavárez">
+                                <div class="collab-info">
+                                    <h3>Lenny Tavárez</h3>
+                                    <p>"Nena Maldición"</p>
+                                    <img src="img/col_lenny.jpg" alt="Puerto Rico" class="country-flag">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collab-controls">
+                        <span class="prev-collab"><i class="fas fa-chevron-left"></i></span>
+                        <div class="collab-dots">
+                            <span class="collab-dot active" data-index="0"></span>
+                            <span class="collab-dot" data-index="1"></span>
+                            <span class="collab-dot" data-index="2"></span>
+                        </div>
+                        <span class="next-collab"><i class="fas fa-chevron-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="social-media">
+            <a href="https://www.instagram.com/paulolondra/" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/paulolondra" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/paulolondra" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@paulolondra?lang=es" title="tiktok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@PauloLondra" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://open.spotify.com/artist/3vQ0GE3mI0dAaxIMYe5g7z" title="Spotify"><i class="fab fa-spotify"></i></a>
+            <a href="https://music.amazon.com.mx/artists/B072KDPWQD/paulo-londra?marketplaceId=A1AM78C64UM0Y8&musicTerritory=MX&ref=dm_sh_l2q7sxtGteflKgDZwrDpSilT4" title="Amazon Music"><i class="fab fa-amazon"></i></a>
+        </div>
+        <div class="copyright">
+            © 2025 Paulo Londra. Todos los derechos reservados.
+        </div>
+        <div class="developer">
+            Desarrollado por: <span class="dev-name">Donaji Perez Margarito</span>
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
