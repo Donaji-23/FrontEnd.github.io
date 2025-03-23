@@ -95,6 +95,7 @@
 .album-page {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .back-button {
@@ -109,7 +110,7 @@
 .back-button:hover {
     color: var(--color-yellow);
 }
-
+/*
 .album-header {
     margin-bottom: 40px;
 }
@@ -117,20 +118,23 @@
 .album-details {
     display: flex;
     gap: 30px;
-}
+}*/
 
 .album-cover-large {
     flex: 0 0 300px;
     height: 300px;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    box-shadow: 10 5px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .album-cover-large img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .album-info-large {
@@ -246,7 +250,7 @@
 .cancion-cover img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .cancion-info {
