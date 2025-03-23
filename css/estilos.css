@@ -567,19 +567,19 @@ h1, h2, h3, h4, h5, h6 {
         flex-direction: column;
         text-align: center;
     }
-
+    
     .bio-image {
         margin: 0 auto 30px;
     }
-
+    
     .gallery-container {
         grid-template-columns: repeat(3, 1fr);
     }
-
+    
     .release-content {
         flex-direction: column;
     }
-
+    
     .release-info {
         text-align: center;
     }
@@ -589,40 +589,40 @@ h1, h2, h3, h4, h5, h6 {
     .header {
         justify-content: center;
     }
-
+    
     .hamburger-menu {
         display: flex;
     }
-
+    
     .sidebar {
         transform: translateX(-100%);
     }
-
+    
     .sidebar.active {
         transform: translateX(0);
     }
-
+    
     .content {
         margin-left: 0;
     }
-
+    
     .gallery-container {
         grid-template-columns: repeat(2, 1fr);
     }
-
+    
     .collab-artist {
         flex-direction: column;
     }
-
+    
     .collab-artist img {
         margin-right: 0;
         margin-bottom: 20px;
     }
-
+    
     .collab-info {
         text-align: center;
     }
-
+    
     .slideshow-container {
         height: 350px;
     }
@@ -632,15 +632,15 @@ h1, h2, h3, h4, h5, h6 {
     .gallery-container {
         grid-template-columns: 1fr;
     }
-
+    
     .slideshow-container {
         height: 250px;
     }
-
+    
     .section {
         padding: 20px;
     }
-
+    
     .release-cover {
         width: 200px;
         height: 200px;
